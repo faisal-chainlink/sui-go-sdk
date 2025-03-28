@@ -74,7 +74,7 @@ func (s *suiWriteTransactionImpl) MoveCall(ctx context.Context, req models.MoveC
 			req.Arguments,
 			req.Gas,
 			req.GasBudget,
-			req.ExecutionMode,
+			1,
 		},
 	})
 	if err != nil {
